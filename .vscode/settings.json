@@ -9,5 +9,9 @@
         "tsconfig.json": "tsconfig.*.json",
         "package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml, bun.lockb, bun.lock",
         ".config": "package.json, tsconfig.*, metro.config.js, jest.config.js, Gemfile, Gemfile.lock, app.json, babel.config.js, .gitignore, .editorconfig, .eslintrc.js, .prettierrc.js"
-    }
+    },
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": "always"
+    },
 }
