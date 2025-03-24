@@ -18,17 +18,17 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '18'
-          cache: 'yarn'
+          cache: 'npm'
 
       - name: 📦 Instalar dependências
-        run: yarn install
+        run: npm install
 
       - name: ✅ Rodar testes com coverage
-        run: yarn test --coverage
+        run: npm run test --coverage
 
       - name: 📊 Gerar badge de cobertura
         run: |
-          yarn add --dev coverage-badge-cli
+          npm install --save-dev coverage-badge-cli
           npx coverage-badge -o coverage/badge.svg
 
       - name: 💾 Salvar HTML do coverage como artefato
