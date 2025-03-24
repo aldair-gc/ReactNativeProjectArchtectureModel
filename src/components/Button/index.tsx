@@ -1,17 +1,21 @@
 import { memo } from 'react';
 import { Text, TouchableOpacity, TouchableOpacityProps } from 'react-native';
 
-import { styles } from './styles';
+import { stylesWithProps } from './styles';
 
-interface ButtonProps extends TouchableOpacityProps {
+export interface ButtonProps extends TouchableOpacityProps {
     text: string;
 }
 
-export function ButtonComponent({ text, ...props }: ButtonProps) {
+export function ButtonComponent({ text, disabled, ...props }: ButtonProps) {
+    const styles = stylesWithProps({ disabled });
+
     return (
         <TouchableOpacity
+            testID="button"
             activeOpacity={0.7}
             style={styles.container}
+            disabled={disabled}
             {...props}
         >
             <Text style={styles.text}>{text}</Text>
@@ -20,4 +24,4 @@ export function ButtonComponent({ text, ...props }: ButtonProps) {
 }
 
 export const Button = memo(ButtonComponent, (prev, next) =>
-    prev.text === next.text);
+    prev.text === next.text && prev.disabled === next.disabled);

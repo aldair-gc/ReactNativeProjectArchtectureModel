@@ -1,7 +1,12 @@
-import { Search } from '@screens';
+import { Router } from '@routes';
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+
+const queryClient = new QueryClient();
 
 export default function App() {
     return (
-        <Search />
+        <QueryClientProvider client={queryClient}>
+            <Router />
+        </QueryClientProvider>
     );
 }

@@ -38,6 +38,7 @@ exports[`Button renders correctly with text 1`] = `
       "paddingHorizontal": 24,
     }
   }
+  testID="button"
 >
   <Text
     style={
