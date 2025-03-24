@@ -1,3 +1,4 @@
+![Cobertura de Testes](./coverage/badge.svg)
 
 # 📱 ReactNativeUSPExample
 
