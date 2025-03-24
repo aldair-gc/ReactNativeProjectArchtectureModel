@@ -1,5 +1,3 @@
-![Cobertura de Testes](./coverage/badge.svg)
-
 # 📱 ReactNativeUSPExample
 
 Este repositório foi desenvolvido como material de apoio para a disciplina **Arquitetura Mobile com React Native**, ministrada no curso de MBA em Engenharia de Software da USP/Esalq.
