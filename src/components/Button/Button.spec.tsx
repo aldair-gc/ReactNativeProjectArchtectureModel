@@ -53,8 +53,6 @@ describe('Button', () => {
 
         const secondButton = getByText('Styled');
 
-        console.log(secondButton.children[0]);
-
         expect(secondButton.children[0]).toBe('Styled');
     });
 });
