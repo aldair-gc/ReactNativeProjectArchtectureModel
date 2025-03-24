@@ -30,6 +30,7 @@ jobs:
         run: |
           mkdir public
           cp -r coverage/lcov-report/* public/
+          touch public/.nojekyll
 
       - name: 🚀 Publicar em GitHub Pages (gh-pages)
         uses: peaceiris/actions-gh-pages@v3
