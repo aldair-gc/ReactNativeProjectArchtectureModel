@@ -1,6 +1,6 @@
-import axios from 'axios';
+import axios, { AxiosError } from 'axios';
 
-import { requestMonitor, responseMonitor } from '../../utils';
+import { catchError, requestMonitor, responseMonitor } from '../../utils';
 
 const githubApi = axios.create({
     baseURL: 'https://api.github.com',
@@ -13,12 +13,16 @@ githubApi.interceptors.request.use(config => {
     requestMonitor(config);
 
     return config;
+}, error => {
+    catchError(error);
 });
 
 githubApi.interceptors.response.use(config => {
     responseMonitor(config);
 
     return config;
+}, error => {
+    catchError(error);
 });
 
 export { githubApi };
