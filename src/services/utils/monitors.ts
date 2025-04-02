@@ -20,7 +20,7 @@ export function catchError(error: AxiosError) {
             JSON.stringify({
                 message: error.message,
                 errorStatus: error.status,
-                errorCode: error.code
+                errorCode: error.code,
             }, undefined, 4));
 
         return;
