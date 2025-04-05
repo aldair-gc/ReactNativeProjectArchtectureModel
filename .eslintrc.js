@@ -9,7 +9,7 @@ module.exports = {
                 'groups': ['builtin', 'external', 'internal'],
                 'pathGroups': [
                     {
-                        'pattern': 'react+(|-native)',
+                        'pattern': 'react+(|-native)+(|-*)',
                         'group': 'external',
                         'position': 'before',
                     },

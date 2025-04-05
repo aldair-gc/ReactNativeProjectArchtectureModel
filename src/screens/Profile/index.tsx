@@ -4,9 +4,9 @@ import {
     Text,
     View,
 } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { Spacer } from '@components';
-import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { ReposList } from './components/ReposList';
 import { useProfile } from './hooks';

@@ -1,6 +1,7 @@
+import { useTranslation as useTranslationCore } from 'react-i18next';
+
 import { LanguageResourcesType } from '@locales';
 import { TOptionsBase } from 'i18next';
-import { useTranslation as useTranslationCore } from 'react-i18next';
 
 import { ptBR } from '../languages/ptBR';
 
