@@ -40,7 +40,7 @@ export function useSearch() {
             return;
         }
 
-        coordinator.gotToProfile(user, repos);
+        coordinator.goToProfile(user, repos);
     }
 
     return {

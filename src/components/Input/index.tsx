@@ -8,4 +8,3 @@ function InputComponent({ ...props }: TextInputProps) {
 }
 
 export const Input = memo(InputComponent);
-

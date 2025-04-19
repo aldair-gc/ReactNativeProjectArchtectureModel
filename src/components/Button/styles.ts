@@ -1,6 +1,6 @@
 import { StyleSheet } from 'react-native';
 
-import { ButtonProps } from '.';
+import type { ButtonProps } from '.';
 
 export const stylesWithProps = ({ disabled }: Pick<ButtonProps, 'disabled'>) => StyleSheet.create({
     container: {

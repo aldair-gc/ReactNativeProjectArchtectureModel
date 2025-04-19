@@ -1,6 +1,6 @@
 import { FlatList } from 'react-native';
 
-import { GithubUserRepo } from '@services';
+import type { GithubUserRepo } from '@services';
 
 import { RepoItem } from './RepoItem';
 import { styles } from './styles';

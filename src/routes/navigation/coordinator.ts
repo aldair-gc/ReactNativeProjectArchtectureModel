@@ -4,7 +4,7 @@ import { navigation } from './navigation';
 import { MainStackScreenNames } from '../stack/MainStack.routes';
 
 const mainCoordinator = {
-    gotToProfile: (user: GithubUser,
+    goToProfile: (user: GithubUser,
         repos: GithubUserRepo[]) => navigation.push(MainStackScreenNames.Profile, { user, repos }),
 };
 
