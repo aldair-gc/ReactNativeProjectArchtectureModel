@@ -1,81 +1,80 @@
-# 📱 ReactNativeUSPExample
+# ReactNativeStructureModel
 
-Este repositório foi desenvolvido como material de apoio para a disciplina **Arquitetura Mobile com React Native**, ministrada no curso de MBA em Engenharia de Software da USP/Esalq.
-
-O projeto tem como objetivo demonstrar, de forma prática e didática, como estruturar um aplicativo React Native moderno, utilizando boas práticas de arquitetura, componentes reutilizáveis, internacionalização e integração com APIs externas.
+React Native application structure, using good architecture practices, reusable components, internationalization and integration with external APIs.
 
 ---
 
-## 🧭 Sumário
+## Sumário
 
-- [Pré-requisitos](#pré-requisitos)
-- [Instalação](#instalação)
-- [Scripts Disponíveis](#scripts-disponíveis)
-- [Estrutura de Pastas](#estrutura-de-pastas)
-- [Tecnologias e Bibliotecas Utilizadas](#tecnologias-e-bibliotecas-utilizadas)
-- [Funcionalidades Implementadas](#funcionalidades-implementadas)
-- [Próximos Passos e Sugestões](#próximos-passos-e-sugestões)
+- [Requirements](#requirements)
+- [Instalation](#instalation)
+- [Available Scripts](#available-scripts)
+- [Folder Structure](#folder-structure)
+- [Technologies and Libraries](#tecnologies-and-libraries)
+- [Functionalities](#functionalities)
+- [Next Steps and Suggestions](#next-steps-and-suggestions)
+- [About](#about)
 
 ---
 
-## ✅ Pré-requisitos
+## Requirements
 
-Antes de rodar o projeto, você precisa ter instalado:
-
-- Node.js (versão recomendada: 18+)
-- Yarn ou NPM
-- Android Studio ou Xcode (para emuladores)
+- Node.js
+- Yarn or NPM
+- Android Studio or Xcode (para emuladores)
 - React Native CLI
-- CocoaPods (para iOS)
+- CocoaPods (for iOS)
 
 ---
 
-## 🚀 Instalação
+## Instalation
 
 ```bash
-# Clone o repositório
-git clone https://github.com/adonaipinheiro/ReactNativeUSPExample.git
+# Clone the repository
+git clone
 
-# Acesse a pasta do projeto
-cd ReactNativeUSPExample
+# Enter the project directory
+cd ReactNativeStructureModel
 
-# Instale as dependências
+# Install dependencies
 yarn install
+# or
+npm install
 
-# (Apenas para iOS)
+# Install CocoaPods dependencies (to iOS only)
 cd ios && pod install && cd ..
 ```
 
 ---
 
-## 💻 Scripts Disponíveis
+## Available Scripts
 
 ```bash
-yarn android     # Executa no emulador Android
-yarn ios         # Executa no simulador iOS
-yarn lint        # Executa o ESLint
-yarn format      # Formata o código com Prettier
-yarn test        # Executa os testes com Jest
+yarn android     # Run Android emulator
+yarn ios         # Run iOS emulator
+yarn lint        # Run ESLint to check for code quality
+yarn format      # Format code with Prettier
+yarn test        # Run tests with Jest
 ```
 
 ---
 
-## 🧱 Estrutura de Pastas
+## Folder Structure
 
 ```bash
 src/
-├── assets/        # Imagens e recursos visuais
-├── components/    # Componentes reutilizáveis (Button, Input, Spacer)
-├── locales/       # Internacionalização (pt/en)
-├── routes/        # Sistema de navegação com React Navigation
-├── screens/       # Telas principais (Profile, Search)
-├── services/      # Camada de acesso a APIs externas (ex: GitHub)
-└── index.tsx      # Entry point do app
+├── assets/        # Images, fonts, icons
+├── components/    # Reusable components (Button, Input, etc.)
+├── locales/       # Localization files (i18n)
+├── routes/        # Navigation routes with React Navigation
+├── screens/       # Screens of the app (Home, Profile, etc.)
+├── services/      # API services (Axios instances)
+└── index.tsx      # Main entry point of the app
 ```
 
 ---
 
-## 🛠️ Tecnologias e Bibliotecas Utilizadas
+## Tecnologies and Libraries
 
 - [React Native](https://reactnative.dev/)
 - [TypeScript](https://www.typescriptlang.org/)
@@ -83,23 +82,29 @@ src/
 - [Axios](https://axios-http.com/)
 - [i18n-js](https://github.com/fnando/i18n-js) + [react-native-localize](https://github.com/zoontek/react-native-localize)
 - [ESLint](https://eslint.org/) + [Prettier](https://prettier.io/)
-- [Jest](https://jestjs.io/) (pré-configurado)
+- [Jest](https://jestjs.io/)
 
 ---
 
-## 📌 Funcionalidades Implementadas
+## Functionalities
 
-- Estrutura modular com separação clara de responsabilidades
-- Componentes otimizados e reaproveitáveis
-- Suporte a múltiplos idiomas (Português/Inglês)
-- Integração com a API pública do GitHub (busca de usuários e repositórios)
-- Estilização desacoplada com base em props
-- Uso de TypeScript com tipagem forte
+- Modular structure with clear separation of responsibilities
+- Optimized and reusable components
+- Support for multiple languages
+- Integration with external APIs
+- Decoupled styling based on props
+- Use of TypeScript with strong typing
+- Unit tests with Jest
 
 ---
 
-## 👨‍🏫 Sobre o Autor
+## Next Steps and Suggestions
 
-Este projeto foi desenvolvido por [Adonai Pinheiro](https://github.com/adonaipinheiro) para fins educacionais no MBA USP/Esalq.
+- Implement Global State Management (e.g., Zustand, Redux, MobX)
+- Implement CI/CD for automated testing and deployment
 
-Sinta-se à vontade para clonar, estudar e adaptar para seus próprios projetos!
+---
+
+## About
+
+Forked from: [Adonai Pinheiro](https://github.com/adonaipinheiro).
