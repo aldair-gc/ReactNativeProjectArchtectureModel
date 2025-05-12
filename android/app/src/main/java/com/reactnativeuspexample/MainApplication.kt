@@ -1,4 +1,4 @@
-package com.reactnativeuspexample
+package com.ReactNativeProjectArchitectureModel
 
 import android.app.Application
 import com.facebook.react.PackageList
